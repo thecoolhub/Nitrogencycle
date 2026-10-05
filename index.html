@@ -8,18 +8,30 @@
     <a href="https://stackoverflow.com/questions/47281484/how-to-make-click-reveal-in-css-js"><h2>This is what helped me for interactive buttons</h2></a>
     <img src="Nitrogenfixtation.heic" alt="idk" width="15%" height="15%"
     <p class="center">Nitrogen fixation: Soil dwelling ___ (and lighting) are able to transform atmospheric nitrogen into a form tht other living cells can use. it is done by ___</p>
-    <button type="button" id="btn" onclick="fns()" class="btn btn-primary">clickme</button>
+    <button type="button" id="btn" onclick="fns()" class="btn btn-primary">click me</button>
+    <p class="center">what is opposite of nitrogen fixtation that converts nitrates into gas, nitrogen gas is released into atmosphere and some bacteria can do opposite of nitrogen fixtation?</p>
+    <button type="button" id="btn2" onclick="fns2()" class="btn btn-primary">Answer</button>
+
   </body>
   <script>
     function fns() {
-  var elem = document.getElementById("btn");
-  if (elem.innerHTML == "clickme") {
+  var elem = document.getElementById("btn2");
+  if (elem.innerHTML == "click me") {
     elem.innerHTML = "The blank(s) were bacteria";
   } else {
-    elem.innerHTML = "clickme";
+    elem.innerHTML = "click me";
   }
 
 }
+function fns2() {
+  var elem = document.getElementById("btn");
+  if (elem.innerHTML == "") {
+    elem.innerHTML = "Denitrification";
+  } else {
+    elem.innerHTML = "Answer";
+  }
 
+}
+Copy
   </script>
 </html>
